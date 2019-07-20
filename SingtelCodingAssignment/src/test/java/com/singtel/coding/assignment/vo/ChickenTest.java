@@ -8,24 +8,25 @@ import org.junit.Test;
 
 import com.singtel.coding.assignement.helper.SystemOutResource;
 import com.singtel.coding.assignment.constants.ActivityConstants;
+import com.singtel.coding.assignment.constants.SoundConstants;
 
-public class BirdTest {
+public class ChickenTest {
 
 	@Rule
 	public SystemOutResource sysOut = new SystemOutResource();
 
 	@Test
-	public void testFly() {
-		Bird bird = new Bird();
-		bird.fly();
-		assertThat(sysOut.asString(), containsString(ActivityConstants.I_AM_FLYING));
+	public void testTalk() {
+		Chicken chicken = new Chicken();
+		chicken.talk();
+		assertThat(sysOut.asString(), containsString("I say "+ SoundConstants.CHICKEN));
 	}
 
 	@Test
-	public void testSing() {
-		Bird bird = new Bird();
-		bird.sing();
-		assertThat(sysOut.asString(), containsString(ActivityConstants.I_AM_SINGING));
+	public void testFly() {
+		Chicken chicken = new Chicken();
+		chicken.fly();
+		assertThat(sysOut.asString(), containsString(ActivityConstants.I_CANNOT_FLY));
 	}
 
 }

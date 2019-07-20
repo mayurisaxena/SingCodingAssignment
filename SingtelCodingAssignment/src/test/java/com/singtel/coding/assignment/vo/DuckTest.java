@@ -8,17 +8,25 @@ import org.junit.Test;
 
 import com.singtel.coding.assignement.helper.SystemOutResource;
 import com.singtel.coding.assignment.constants.ActivityConstants;
+import com.singtel.coding.assignment.constants.SoundConstants;
 
-public class AnimalTest {
+public class DuckTest {
 
 	@Rule
 	public SystemOutResource sysOut = new SystemOutResource();
 
 	@Test
-	public void testWalk() {
-		Animal animal = new Animal();
-		animal.walk();
-		assertThat(sysOut.asString(), containsString(ActivityConstants.I_AM_WALKING));
+	public void testTalk() {
+		Duck duck = new Duck();
+		duck.talk();
+		assertThat(sysOut.asString(), containsString("I say " + SoundConstants.DUCK));
+	}
+
+	@Test
+	public void testSwim() {
+		Duck duck = new Duck();
+		duck.swim();
+		assertThat(sysOut.asString(), containsString(ActivityConstants.I_AM_SWIMMING));
 	}
 
 }

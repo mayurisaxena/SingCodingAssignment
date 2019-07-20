@@ -1,11 +1,21 @@
 package com.singtel.coding.assignment.vo;
 
-public class Bird extends Animal{
+import com.singtel.coding.assignment.activity.Fly;
+import com.singtel.coding.assignment.activity.Sing;
+
+public class Bird extends Animal implements Fly, Sing {
+
+	public Bird() {
+		this.setCanFly(true);
+		this.setCanSing(true);
+	}
+
 	public void fly() {
-		System.out.println("I am flying");
+		Fly.super.fly(this.isCanFly());
 	}
 
 	public void sing() {
-		System.out.println("I am singing");
+		Sing.super.sing(this.isCanSing());
 	}
+
 }

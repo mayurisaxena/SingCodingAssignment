@@ -12,11 +12,11 @@ public class Solution {
 	private Solution() {
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IllegalAccessException {
 		Bird bird = new Bird();
-		bird.walk();
 		bird.fly();
 		bird.sing();
+
 	}
 
 }

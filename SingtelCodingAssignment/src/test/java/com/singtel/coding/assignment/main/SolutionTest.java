@@ -18,7 +18,7 @@ public class SolutionTest {
 	public SystemOutResource sysOut = new SystemOutResource();
 
 	@Test
-	public void testSolution() {
+	public void testSolution() throws IllegalAccessException {
 		Solution.main(null);
 		assertThat(sysOut.asString(), containsString("I am "));
 	}
