@@ -1,9 +1,11 @@
 package com.singtel.coding.assignment.vo;
 
+import com.singtel.coding.assignment.activity.Fly;
+import com.singtel.coding.assignment.activity.Sing;
 import com.singtel.coding.assignment.activity.Swim;
 import com.singtel.coding.assignment.activity.Walk;
 
-public class Animal implements Walk, Swim {
+public class Animal implements Walk, Swim,  Fly, Sing {
 
 	private boolean canFly = false;
 	private boolean canSing = false;
@@ -16,6 +18,14 @@ public class Animal implements Walk, Swim {
 
 	public void swim() {
 		Swim.super.swim(canSwim);
+	}
+
+	public void fly() {
+		Fly.super.fly(canFly);
+	}
+
+	public void sing() {
+		Sing.super.sing(canSing);
 	}
 
 	public boolean isCanFly() {

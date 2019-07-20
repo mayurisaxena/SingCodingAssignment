@@ -1,6 +1,6 @@
 package com.singtel.coding.assignment.main;
 
-import com.singtel.coding.assignement.helper.CountAnimalType;
+import com.singtel.coding.assignment.helper.CountAnimalType;
 import com.singtel.coding.assignment.vo.Animal;
 import com.singtel.coding.assignment.vo.Bird;
 import com.singtel.coding.assignment.vo.Butterfly;

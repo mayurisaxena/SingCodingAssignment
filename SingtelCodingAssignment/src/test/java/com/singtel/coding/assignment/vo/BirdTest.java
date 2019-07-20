@@ -6,8 +6,8 @@ import static org.junit.Assert.assertThat;
 import org.junit.Rule;
 import org.junit.Test;
 
-import com.singtel.coding.assignement.helper.SystemOutResource;
 import com.singtel.coding.assignment.constants.ActivityConstants;
+import com.singtel.coding.assignment.helper.SystemOutResource;
 
 public class BirdTest {
 

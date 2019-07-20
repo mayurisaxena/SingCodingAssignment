@@ -10,12 +10,4 @@ public class Bird extends Animal implements Fly, Sing {
 		this.setCanSing(true);
 	}
 
-	public void fly() {
-		Fly.super.fly(this.isCanFly());
-	}
-
-	public void sing() {
-		Sing.super.sing(this.isCanSing());
-	}
-
 }

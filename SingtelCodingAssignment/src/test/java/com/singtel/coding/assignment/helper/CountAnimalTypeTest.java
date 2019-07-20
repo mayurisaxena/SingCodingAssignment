@@ -7,8 +7,8 @@ import static org.junit.Assert.assertThat;
 import org.junit.Rule;
 import org.junit.Test;
 
-import com.singtel.coding.assignement.helper.CountAnimalType;
-import com.singtel.coding.assignement.helper.SystemOutResource;
+import com.singtel.coding.assignment.helper.CountAnimalType;
+import com.singtel.coding.assignment.helper.SystemOutResource;
 import com.singtel.coding.assignment.main.Solution;
 import com.singtel.coding.assignment.vo.Animal;
 import com.singtel.coding.assignment.vo.Bird;

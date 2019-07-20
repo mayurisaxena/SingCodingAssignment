@@ -1,4 +1,4 @@
-package com.singtel.coding.assignement.helper;
+package com.singtel.coding.assignment.helper;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
