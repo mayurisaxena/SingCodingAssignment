@@ -7,7 +7,7 @@ public class Rooster extends Bird implements Talk{
 
 	Chicken chicken;
 
-	Rooster() {
+	public Rooster() {
 		this.chicken = new Chicken();
 		this.setCanFly(chicken.isCanFly());
 	}
